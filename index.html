@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Realistic Stopwatch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Realistic Stopwatch</h1>
+  </header>
+  <div class="container">
+    <div class="content">
+      <div class="stopwatch-container">
+        <div class="stopwatch">
+          <div class="stopwatch-display" id="time">00:00:00:00</div>
+          <div class="controls">
+            <button id="start"><i class="fas fa-play"></i></button>
+            <button id="stop"><i class="fas fa-stop"></i></button>
+            <button id="reset"><i class="fas fa-redo"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="lap-container">
+        <h2>Laps</h2>
+        <button id="lap" class="lap-button"><i class="fas fa-flag"></i> Record Lap</button>
+        <div class="laps">
+          <table>
+            <thead>
+              <tr>
+                <th>Lap</th>
+                <th>Time</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="no-laps">
+                <td colspan="3">No laps recorded yet</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Created by <a href="https://www.linkedin.com/in/kishorebabu-tulugu/">Tulugu Kishore Babu</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
